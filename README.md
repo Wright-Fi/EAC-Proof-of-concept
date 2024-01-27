@@ -6,7 +6,7 @@ A simple NodeJS applicaiton using Express with Handlebars
 ## Application Install
 
 ```
-git clone <this repo> EAC
+git clone https://github.com/Wright-Fi/EAC-Proof-of-concept/ EAC
 cd EAC
 npm install
 ```
@@ -18,13 +18,13 @@ Open the `configs.js` file and edit the variables
 
 var config = {
     // Meraki API Key
-    apiKey: "Enter",
+    apiKey: "Enter-API-Key-Here",
 
     // Meraki API Base URL
     apiUrl: "https://api.meraki.com/api/v1", // Updated Meraki API from V0 to V1
 
     // The Meraki Network ID
-    networkId: "YourNetworkID", 
+    networkId: "Enter-Network-ID-Here", 
 
     // Enter your password and corresponding Group Policy ID here
     policyMappings: {
