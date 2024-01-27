@@ -1,0 +1,69 @@
+The following files have been modified from the origonal source code.
+
+-------------------------------------------------------------
+meraki-policy-summary.js
+
+>Updated Meraki API from V0 to V1
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+server.js
+
+>Updated Meraki API from V0 to V1
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+configs.js
+
+>Updated Meraki API from V0 to V1
+>Added the object policyMappings - This object provides the mapping between each password and Group Policy ID.
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+index.hbs
+
+>Edited the form name to "form-enter-password"
+>Edited the heading from "WiFi Registration" to "WiFi Access"
+>Edited text to "Please enter your password to use the Wi-Fi network."
+>Removed the Name and Email input fields and added a password input field
+>Commented out the terms and conditions checkbox
+>Changed button name to "Connect"
+>Removed unused "Future Social Features" commented out code
+>Commented out the show IP and MAC Address fields
+
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+style.css
+
+>Edited the form name to "form-enter-password"
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+login.js
+
+>Added Validation middleware - This checks that the password entered has an entry in the configs.js file, if no entry is found the form is rerendered and the error message "Incorrect Password" is added to the console. If a entry is found login logic proceeds.
+>Added const password and const policyId to validation middleware
+>API parameters rewritten into POST login data
+>Layout of Bind client to a group policy id updated
+>POST login data rewritten - Unused commented out code removed, router.post uses middleware for password verification before proceeding, the const from API parameters added to this section of code and cont policyId retrieves policyId from middleware.
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+README.md
+
+>updated the instructions
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+splash-screenshot.png
+
+>updated the image
+-------------------------------------------------------------
