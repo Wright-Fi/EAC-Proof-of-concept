@@ -11,7 +11,7 @@ html{
     text-align: center;
 }
 
-.form-register-with-email{
+.form-enter-password{
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -19,7 +19,7 @@ html{
     text-align: center;
 }
 
-.form-register-with-email .form-white-background{
+.form-enter-password .form-white-background{
     width: 570px;
     box-sizing: border-box;
     background-color: #ffffff;
@@ -28,17 +28,17 @@ html{
     margin-bottom: 35px;
 }
 
-.form-register-with-email .form-row{
+.form-enter-password .form-row{
     text-align: left;
     margin-bottom: 23px;
 }
 
-.form-register-with-email .form-title-row{
+.form-enter-password .form-title-row{
     text-align: center;
     margin-bottom: 50px;
 }
 
-.form-register-with-email h1{
+.form-enter-password h1{
     display: inline-block;
     box-sizing: border-box;
     color:  #4c565e;
@@ -48,7 +48,7 @@ html{
     margin: 0;
 }
 
-.form-register-with-email .form-row > label span{
+.form-enter-password .form-row > label span{
     display: inline-block;
     box-sizing: border-box;
     color:  #5f5f5f;
@@ -57,7 +57,7 @@ html{
     padding-right: 25px;
 }
 
-.form-register-with-email input{
+.form-enter-password input{
     color:  #5f5f5f;
     box-sizing: border-box;
     width: 230px;
@@ -66,14 +66,14 @@ html{
     border: 1px solid #dbdbdb;
 }
 
-.form-register-with-email .form-checkbox input{
+.form-enter-password .form-checkbox input{
     margin-left: 128px;
     margin-right: 10px;
     width: auto;
     vertical-align: top;
 }
 
-.form-register-with-email .form-row .form-checkbox span{
+.form-enter-password .form-row .form-checkbox span{
     font-size: 12px;
     font-weight: normal;
     display: inline-block;
@@ -82,12 +82,12 @@ html{
     margin: 0;
 }
 
-.form-register-with-email .form-checkbox span a{
+.form-enter-password .form-checkbox span a{
     text-decoration: none;
     color:  #6caee0;
 }
 
-.form-register-with-email button{
+.form-enter-password button{
     display: block;
     border-radius: 2px;
     background-color:  #6caee0;
@@ -100,7 +100,7 @@ html{
     cursor: pointer;
 }
 
-.form-register-with-email .form-log-in-with-existing{
+.form-enter-password .form-log-in-with-existing{
     text-decoration: none;
     padding: 4px 8px;
     font-weight: normal;
@@ -181,13 +181,13 @@ html{
         margin: 20px auto;
     }
 
-    .form-register-with-email{
+    .form-enter-password{
         position: relative;
         display: block;
         margin: 0;
     }
 
-    .form-register-with-email .form-white-background{
+    .form-enter-password .form-white-background{
         margin: 0 auto 32px;
     }
 
@@ -201,33 +201,33 @@ html{
 
 @media (max-width: 600px) {
 
-    .form-register-with-email .form-white-background{
+    .form-enter-password .form-white-background{
         width: 300px;
         padding-left: 35px;
         padding-right: 35px;
     }
 
-    .form-register-with-email .form-row > label span{
+    .form-enter-password .form-row > label span{
         display: block;
         text-align: left;
         padding: 0 0 10px;
     }
 
-    .form-register-with-email input{
+    .form-enter-password input{
         display: block;
         margin: 0 auto;
     }
 
-    .form-register-with-email .form-checkbox input{
+    .form-enter-password .form-checkbox input{
         display: inline-block;
         margin-left: 0;
     }
 
-    .form-register-with-email .form-checkbox span{
+    .form-enter-password .form-checkbox span{
         width: 200px !important;
     }
 
-    .form-register-with-email:after{
+    .form-enter-password:after{
         bottom: -80px;
         left: 50%;
         margin-left: -25px;
