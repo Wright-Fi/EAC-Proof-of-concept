@@ -23,7 +23,7 @@ var JSONbig = require('json-bigint')({"storeAsString": true});
 var configs = require('./configs.js');
 
 var apiKey = process.env.API_KEY || configs.apiKey || ''; // config env params
-var baseUrl = configs.baseUrl || 'https://api.meraki.com/api/v0';
+var baseUrl = configs.baseUrl || 'https://api.meraki.com/api/v1'; // Updated Meraki API from V0 to V1
 
 const meraki = axios.create({
     baseURL: baseUrl,
