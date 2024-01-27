@@ -14,7 +14,7 @@ var configs = require('./configs.js');
 /* Local Configuration alternative
 var configs = {
     apiKey: 'YourAPIKey',
-    apiUrl: 'https://api.meraki.com/api/v0'
+    apiUrl: 'https://api.meraki.com/api/v1' Updated Meraki API from V0 to V1
 };
 */
 
@@ -130,9 +130,6 @@ app.use('/api', jsonParser, function (req, res){
   });
 
 });
-
-
-
 
 
 // Start server
