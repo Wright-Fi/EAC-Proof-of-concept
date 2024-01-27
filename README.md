@@ -1,4 +1,4 @@
-# Meraki Splash Page with Group Policies
+# Meraki Splash Page mapping passwordw to Group Policies
 A simple NodeJS applicaiton using Express with Handlebars
 
 ![screenshot](./screenshots/splash-screenshot.png "Splash Page")
@@ -6,25 +6,34 @@ A simple NodeJS applicaiton using Express with Handlebars
 ## Application Install
 
 ```
-git clone <this repo> meraki
-cd meraki
+git clone <this repo> EAC
+cd EAC
 npm install
 ```
-Open the `configs.sample.js` file and edit the variables and save the file as `configs.js`
+Open the `configs.js` file and edit the variables
 ```
 //configs.js
-// Rename this file to configs.js 
+
 // Define your Application Configurations here
+
 var config = {
     // Meraki API Key
-    apiKey: "YourAPIKey", 
-    // The "shard" number for your Meraki organization (find this in your dashboard URL)
-    shard: "n###", 
+    apiKey: "Enter",
+
+    // Meraki API Base URL
+    apiUrl: "https://api.meraki.com/api/v1", // Updated Meraki API from V0 to V1
+
     // The Meraki Network ID
     networkId: "YourNetworkID", 
-    // The Meraki Group Policy ID 
-    policy: "102"
-}
+
+    // Enter your password and corresponding Group Policy ID here
+    policyMappings: {
+      "Password1": "101",
+      "Password2": "102",
+      "Password3": "103"
+  }
+};
+
 ```
 
 ```
@@ -35,9 +44,6 @@ View the site
 
 http://localhost:3000
 
-Test w/ sample moc data
-
-http://localhost:3000/?base_grant_url=https%3A%2F%2Fn143.network-auth.com%2Fsplash%2Fgrant&user_continue_url=http%3A%2F%2Fask.com%2F&node_id=149624921787028&node_mac=88:15:44:50:0a:94&gateway_id=149624921787028&client_ip=10.110.154.195&client_mac=74:da:38:88:7c:df
 
 ## Meraki Setup
 ### Wireless SSID
